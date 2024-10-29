@@ -1,5 +1,5 @@
-const Button = () => {
-  return <button>Click me!</button>;
+const Button = ({ text }) => {
+  return <button className="cookie-button">{text}</button>;
 };
 
 export default Button;
