@@ -5,13 +5,15 @@ import Button from "./Button";
 
 const CookiePopup = () => {
   return (
-    <div className="cookie-layout">
-      <div className="icons">
-        <FaCookieBite className="cookie-icon" />
-        <IoMdClose className="close-icon" />
+    <div className=" dark:bg-white bg-black absolut bottom-0 left-0 gap-5 m-12 rounded-lg p-5 w-80 ">
+      <div className="icons -inset-4 flex justify-between mb-16">
+        <FaCookieBite size={35} className="cookie-icon " />
+        <IoMdClose size={25} className="close-icon cursor-pointer " />
       </div>
-      <div className="cookie-text">
-        <p>We use cookies to improve your user experience.</p>
+      <div className="grid gap-3">
+        <p className="text-lg m-4">
+          We use cookies to improve your user experience.
+        </p>
         <Button text="I like cookies" />
       </div>
     </div>
